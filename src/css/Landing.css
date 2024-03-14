@@ -46,10 +46,92 @@
 .learn-more-button:hover {
   background-color: white;
   color: black;
-  border:2px solid hsl(0, 0%, 8%) ;
+  border: 2px solid hsl(0, 0%, 8%);
 }
 .remote-work-icons {
   display: flex;
   justify-content: space-between;
   margin-top: 20%;
 }
+.hero-mobile-view {
+  display: none;
+}
+.hero-desktop-view {
+  width: 450px;
+}
+@media only screen and (max-width: 480px) {
+  .Landing {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .make-remote-work {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-desktop-view {
+    display: none;
+  }
+  .hero-mobile-view {
+    display: block;
+    width: 100%;
+  }
+  .remote-work-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .remote-work-icons svg {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .Landing {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .make-remote-work {
+      width: 100%;
+      text-align: center;
+    }
+    .hero-desktop-view {
+      display: none;
+    }
+    .hero-mobile-view {
+      display: block;
+      width: 100%;
+    }
+    .remote-work-icons {
+        width: 100%;
+      }
+    .remote-work-icons svg {
+      width: 25%;
+    }   
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .Landing {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .make-remote-work {
+        width: 100%;
+        text-align: center;
+      }
+      .hero-desktop-view {
+        display: none;
+      }
+      .hero-mobile-view {
+        display: block;
+        width: 100%;
+      }
+      .remote-work-icons {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+      .remote-work-icons svg {
+        width: 25%;
+      }   
+  }

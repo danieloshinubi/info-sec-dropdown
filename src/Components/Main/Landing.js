@@ -1,21 +1,18 @@
 import React from "react";
 import heroGuy from "../../Assets/images/image-hero-desktop.png";
+import heroGuyMobileView from "../../Assets/images/image-hero-mobile.png";
 import "../../css/Landing.css";
-
 
 function Landing() {
   return (
     <div className="Landing">
       <div className="make-remote-work">
         <h1 style={{ fontWeight: "700", fontSize: "70px" }}>
-          Make <br /> remote work
+          Make remote work
         </h1>
         <p>
-          
-            Get your team in sync, no matter your location.
-            <br /> Streamlins processes, create team rituals, and
-            <br /> watch productivity soar.
-         
+          Get your team in sync, no matter your location. Streamlins processes,
+          create team rituals, and watch productivity soar.
         </p>
         <button className="learn-more-button" style={{ fontSize: "18px" }}>
           <b>{"Learn more"}</b>
@@ -49,7 +46,18 @@ function Landing() {
         </div>
       </div>
       <div className="makeremote-image">
-        <img src={heroGuy} style={{ width: "450px" }} alt="" />
+        <img
+          src={heroGuy}
+        
+          alt=""
+          className="hero-desktop-view"
+        />
+        <img
+          src={heroGuyMobileView}
+        
+          alt=""
+          className="hero-mobile-view"
+        />
       </div>
     </div>
   );
