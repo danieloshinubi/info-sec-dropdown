@@ -1,0 +1,55 @@
+/* @font-face {
+  font-family: Nunito-Sans;
+  src: url(../../Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf);
+}
+@font-face {
+  font-family: Nunito-Sans-italic;
+  src: url(../../Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\opsz\wdth\wght.ttf);
+} */
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../../Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Epilogue-italic;
+  src: url(../../Epilogue/Epilogue-Italic-VariableFont_wght.ttf);
+}
+.Landing {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Epilogue;
+}
+.make-remote-work {
+  width: 30%;
+}
+.make-remote-work p {
+  line-height: 30px;
+  font-size: 18px;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+}
+
+.learn-more-button {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  width: 170px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8%;
+}
+.learn-more-button:hover {
+  background-color: white;
+  color: black;
+  border:2px solid hsl(0, 0%, 8%) ;
+}
+.remote-work-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20%;
+}

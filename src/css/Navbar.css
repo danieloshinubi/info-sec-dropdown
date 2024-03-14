@@ -1,0 +1,113 @@
+/* @font-face {
+  font-family: Nunito-Sans;
+  src: url(../../Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf);
+}
+@font-face {
+  font-family: Nunito-Sans-italic;
+  src: url(../../Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\opsz\wdth\wght.ttf);
+} */
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../../Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Epilogue-italic;
+  src: url(../../Epilogue/Epilogue-Italic-VariableFont_wght.ttf);
+}
+.Navbar {
+  margin: auto;
+  width: 94%;
+  font-family: Epilogue;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.snap ul {
+  width: 400px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+
+.login ul {
+  width: 250px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  color: hsl(0, 0%, 41%);
+}
+.login ul li {
+  /* height: 50px;
+  width: 170px; */
+  /* border-radius: 15px; */
+  /* text-align: center; */
+  /* align-items: center; */
+  
+}
+.snap ul li {
+  /* height: 50px;
+  width: 170px;
+  border-radius: 15px;
+  text-align: center; */
+
+}
+.nav-menu{
+    height: 50px;
+  width: 170px;
+  border-radius: 15px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    /* text-decoration: none;
+  color: hsl(0, 0%, 41%);
+   */
+}
+
+.snap {
+  display: flex;
+  /* align-items: center; */
+}
+.hover-stuff {
+    color: hsl(0,0%,41%);
+
+} 
+.hover-stuff:hover {
+    color: hsl(0, 0%, 8%);
+  /* text-decoration: none; */
+  /* color: hsl(0, 0%, 41%); */
+  /* align-items: center; */
+   /* height: 50px; */
+  /* width: 170px; */
+  /* border-radius: 15px; */
+  /* text-align: center; */
+  /* background-color: hsl(0, 0%, 8%); */
+  /* color: hsl(0, 0%, 98%); */
+  /* width: 370px; */
+  /* height: 350px; */
+  /* border-radius: 15px; */
+  /* border: none; */
+  /* cursor: pointer; */
+  /* margin-top: 8%; */
+} 
+.register {
+    border:1px solid hsl(0, 0%, 41%) ;
+  /* background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  width: 170px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8%; */
+}
+.hamburger{
+    display: none;
+}
