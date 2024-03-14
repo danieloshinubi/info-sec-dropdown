@@ -46,18 +46,8 @@ function Landing() {
         </div>
       </div>
       <div className="makeremote-image">
-        <img
-          src={heroGuy}
-        
-          alt=""
-          className="hero-desktop-view"
-        />
-        <img
-          src={heroGuyMobileView}
-        
-          alt=""
-          className="hero-mobile-view"
-        />
+        <img src={heroGuy} alt="" className="hero-desktop-view" />
+        <img src={heroGuyMobileView} alt="" className="hero-mobile-view" />
       </div>
     </div>
   );

@@ -1,12 +1,3 @@
-/* @font-face {
-  font-family: Nunito-Sans;
-  src: url(../../Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf);
-}
-@font-face {
-  font-family: Nunito-Sans-italic;
-  src: url(../../Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\opsz\wdth\wght.ttf);
-} */
-
 @font-face {
   font-family: Epilogue;
   src: url(../../Epilogue/Epilogue-VariableFont_wght.ttf);
@@ -26,6 +17,51 @@
 .make-remote-work {
   width: 30%;
 }
+
+
+
+
+/* Animations */
+.make-remote-work,
+.makeremote-image {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .make-remote-work {
+    animation-name: slideInFromLeft;
+  }
+  
+  .makeremote-image {
+    animation-name: slideInFromRight;
+  }
+  /* Animations */
+
+
+
+  
 .make-remote-work p {
   line-height: 30px;
   font-size: 18px;
@@ -86,52 +122,52 @@
   }
 }
 @media only screen and (max-width: 768px) {
-    .Landing {
-      width: 100%;
-      display: flex;
-      flex-direction: column-reverse;
-    }
-    .make-remote-work {
-      width: 100%;
-      text-align: center;
-    }
-    .hero-desktop-view {
-      display: none;
-    }
-    .hero-mobile-view {
-      display: block;
-      width: 100%;
-    }
-    .remote-work-icons {
-        width: 100%;
-      }
-    .remote-work-icons svg {
-      width: 25%;
-    }   
+  .Landing {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
   }
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .Landing {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-      }
-      .make-remote-work {
-        width: 100%;
-        text-align: center;
-      }
-      .hero-desktop-view {
-        display: none;
-      }
-      .hero-mobile-view {
-        display: block;
-        width: 100%;
-      }
-      .remote-work-icons {
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-        }
-      .remote-work-icons svg {
-        width: 25%;
-      }   
+  .make-remote-work {
+    width: 100%;
+    text-align: center;
   }
+  .hero-desktop-view {
+    display: none;
+  }
+  .hero-mobile-view {
+    display: block;
+    width: 100%;
+  }
+  .remote-work-icons {
+    width: 100%;
+  }
+  .remote-work-icons svg {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .Landing {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .make-remote-work {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-desktop-view {
+    display: none;
+  }
+  .hero-mobile-view {
+    display: block;
+    width: 100%;
+  }
+  .remote-work-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .remote-work-icons svg {
+    width: 25%;
+  }
+}
