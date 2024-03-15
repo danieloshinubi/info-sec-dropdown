@@ -18,50 +18,44 @@
   width: 30%;
 }
 
-
-
-
 /* Animations */
 .make-remote-work,
 .makeremote-image {
   opacity: 0;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  @keyframes slideInFromRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .make-remote-work {
-    animation-name: slideInFromLeft;
-  }
-  
-  .makeremote-image {
-    animation-name: slideInFromRight;
-  }
-  /* Animations */
+}
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+.make-remote-work {
+  animation-name: slideInFromLeft;
+}
 
-  
+.makeremote-image {
+  animation-name: slideInFromRight;
+}
+/* Animations */
+
 .make-remote-work p {
   line-height: 30px;
   font-size: 18px;

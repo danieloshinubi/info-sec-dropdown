@@ -23,6 +23,7 @@
   align-items: center;
   color: hsl(0, 0%, 41%);
   text-decoration: none;
+ 
 }
 
 .login ul {
@@ -59,6 +60,7 @@
 }
 .hamburger {
   display: none;
+  width: 40px;
 }
 @media only screen and (max-width: 480px) {
   .snap ul {
