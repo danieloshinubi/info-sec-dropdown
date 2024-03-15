@@ -23,7 +23,6 @@
   align-items: center;
   color: hsl(0, 0%, 41%);
   text-decoration: none;
- 
 }
 
 .login ul {
@@ -33,7 +32,7 @@
   justify-content: space-around;
   color: hsl(0, 0%, 41%);
 }
-
+/* this nav menu is important for the dropdown when fixing it sometime later, remember the time the nigga did that stuff on yt? */
 .nav-menu {
   height: 50px;
   width: 170px;
@@ -42,18 +41,24 @@
   justify-content: center;
   align-items: center;
 }
+.nav-menu:hover {
+  /* border: 2px solid hsl(0, 0%, 8%); */
+  cursor: pointer;
+}
 
 .snap {
   display: flex;
 }
 .hover-stuff {
   color: hsl(0, 0%, 41%);
+  /* transition: 0.1s all ease-in-out; */
 }
 .hover-stuff:hover {
   color: hsl(0, 0%, 8%);
 }
 .register {
   border: 2px solid hsl(0, 0%, 41%);
+  /* transition: 0.1s all ease-in-out; */
 }
 .register:hover {
   border: 2px solid hsl(0, 0%, 8%);
@@ -63,14 +68,36 @@
   width: 40px;
 }
 @media only screen and (max-width: 480px) {
-  .snap ul {
-    display: none;
+  .Navbar {
+    display: block;
+    width: 90%;
   }
-  .login ul {
-    display: none;
-  }
-  .hamburger {
+  /* this is important for the hamburger, kindly note */
+  .aligning {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+  }
+  /* this is important for the hamburger, kindly note, same as the snap class too */
+  .snap ul.login ul {
+    display: none;
+  }
+  .snap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .snap ul.is-open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .hamburger {
+    display: block;
   }
   .hamburger svg {
     width: 25px;
@@ -83,8 +110,15 @@
   .login ul {
     display: none;
   }
+  .snap ul.is-open {
+    /* display: block; */
+    /* already done in the mobile view 480px */
+  }
+  .login ul {
+    display: none;
+  }
   .hamburger {
-    display: flex;
+    display: block;
   }
   .hamburger svg {
     width: 25px;
