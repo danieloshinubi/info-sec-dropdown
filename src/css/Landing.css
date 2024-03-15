@@ -115,6 +115,7 @@
   .remote-work-icons svg {
     width: 25%;
   }
+
 }
 @media only screen and (max-width: 768px) {
   .Landing {
@@ -138,7 +139,9 @@
   }
   .remote-work-icons svg {
     width: 25%;
+    height: 50px;
   }
+
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .Landing {

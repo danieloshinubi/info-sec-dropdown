@@ -107,7 +107,7 @@ function Navbar() {
                     <Link
                       to={link.path}
                       className="snap-nav-link hover-stuff"
-                      style={{ textDecoration: "none", }}
+                      style={{ textDecoration: "none" }}
                     >
                       {link.text}
                     </Link>
@@ -152,7 +152,7 @@ function Navbar() {
                     </Link>
                   </li>
                 );
-              } else if (log.path === "/Login") {
+              } else  {
                 return (
                   <li key={log.path} className="nav-menu">
                     <Link
@@ -176,8 +176,8 @@ function Navbar() {
           </div> */}
         </div>
       </nav>
-      {/* <DropDownMenu /> */}
-      {/* <CompanyDropDownMenu /> */}
+      {/* <DropDownMenu />
+      <CompanyDropDownMenu /> */}
     </>
   );
 }
