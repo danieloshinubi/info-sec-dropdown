@@ -107,7 +107,7 @@ function Navbar() {
                     <Link
                       to={link.path}
                       className="snap-nav-link hover-stuff"
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: "none", }}
                     >
                       {link.text}
                     </Link>
@@ -132,7 +132,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="login">
-          <ul className="login-ul">
+          <ul className={`login-ul ${isOpen ? "is-open" : ""}`}>
             {navigationLinksLogin.map((log) => {
               if (log.path === "/Register") {
                 return (
