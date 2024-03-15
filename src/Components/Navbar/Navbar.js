@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import DropDownMenu from "./DropDownMenu";
 import "../../css/Navbar.css";
 import { Link, useLocation } from "react-router-dom";
+import CompanyDropDownMenu from "./CompanyDropDownMenu";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,20 +101,21 @@ function Navbar() {
                     {dropDown && <DropDownMenu />}
                   </li>
                 );
+              } else if (link.path === "/Company") {
+                return (
+                  <li key={link.path} className="nav-menu">
+                    <Link
+                      to={link.path}
+                      className="snap-nav-link hover-stuff"
+                      style={{ textDecoration: "none" }}
+                    >
+                      {link.text}
+                    </Link>
+                    {link.arrow && link.arrow}
+                    {dropDown && <CompanyDropDownMenu />}
+                  </li>
+                );
               }
-              //   else if(link.path==="/Company"){
-              //     return(<li key={link.path} className="nav-menu">
-              //     <Link
-              //       to={link.path}
-              //       className="snap-nav-link hover-stuff"
-              //       style={{ textDecoration: "none" }}
-              //     >
-              //       {link.text}
-              //     </Link>
-              //     {link.arrow && link.arrow}
-              //     {dropDown && <DropDownMenu />}
-              //   </li>)
-              //   }
               return (
                 <li key={link.path} className="nav-menu">
                   <Link
@@ -123,7 +125,7 @@ function Navbar() {
                   >
                     {link.text}
                   </Link>
-                  {link.arrow && link.arrow}
+                  {/* {link.arrow && link.arrow} */}
                 </li>
               );
             })}
@@ -175,6 +177,7 @@ function Navbar() {
         </div>
       </nav>
       {/* <DropDownMenu /> */}
+      {/* <CompanyDropDownMenu /> */}
     </>
   );
 }

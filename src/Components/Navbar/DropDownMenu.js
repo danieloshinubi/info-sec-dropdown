@@ -61,11 +61,11 @@ const DropDownMenu = () => {
       className: "submenu-item",
     },
   ];
-  const CompanySubmenu = [
-    { path: "/History", text: "History",className: "submenu-item", },
-    { path: "/OurTeam", text: "Our Team",className: "submenu-item", },
-    { path: "/Blog", text: "Blog",className: "submenu-item", },
-  ];
+//   const CompanySubmenu = [
+//     { path: "/History", text: "History",className: "submenu-item", },
+//     { path: "/OurTeam", text: "Our Team",className: "submenu-item", },
+//     { path: "/Blog", text: "Blog",className: "submenu-item", },
+//   ];
 
 
 

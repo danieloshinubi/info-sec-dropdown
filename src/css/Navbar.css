@@ -42,8 +42,9 @@
   align-items: center;
 }
 .nav-menu:hover {
-  /* border: 2px solid hsl(0, 0%, 8%); */
+
   cursor: pointer;
+
 }
 
 .snap {
@@ -62,6 +63,7 @@
 }
 .register:hover {
   border: 2px solid hsl(0, 0%, 8%);
+  /* color: hsl(0, 0%, 8%); */
 }
 .hamburger {
   display: none;
@@ -77,7 +79,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
   }
   /* this is important for the hamburger, kindly note, same as the snap class too */
   .snap ul.login ul {
@@ -94,13 +95,15 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
- 
+
   .hamburger {
     display: block;
+    text-align: center;
   }
   .hamburger svg {
-    width: 25px;
+    /* width: 25px; */
   }
 }
 @media only screen and (max-width: 768px) {
