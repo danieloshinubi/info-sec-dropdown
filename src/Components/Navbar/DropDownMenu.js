@@ -33,7 +33,7 @@ const DropDownMenu = () => {
       className: "submenu-item",
     },
     {
-      path: "/Reminder",
+      path: "/Features/Reminder",
 
       icon: (
         <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ const DropDownMenu = () => {
       className: "submenu-item",
     },
     {
-      path: "/Planning",
+      path: "/Features/Planning",
 
       icon: (
         <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -78,8 +78,8 @@ const DropDownMenu = () => {
         {FeaturesSubmenu.map((item) => {
           return (
             <li key={item.path} className={item.className} >
-              <Link to={item.path} >{item.icon}</Link>
-              <Link to={item.path} onClick={()=> setDropDown(false)} style={{textDecoration:'none', color:"black", padding:'16px', }}>{item.text}</Link>
+              {/* <Link to={item.path} >{item.icon}</Link> */}
+              <Link to={item.path} onClick={()=> setDropDown(false)} style={{textDecoration:'none', color:"black", padding:'16px', display:'flex', justifyContent:"space-around"}}><span>{item.icon}</span> <span>{item.text}</span></Link>
             </li>
           );
         })}

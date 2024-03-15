@@ -6,17 +6,18 @@
     text-align: center;
     /* justify-content: space-between; */
     /* align-items: center; */
-    line-height: 3rem;
+    /* line-height: 0rem; */
     position: absolute;
     top: 75px;
     /* text-decoration: none; */
     /* margin: auto; */
-    padding: 0;
+    padding: 0;border-radius: 15px;
     
 
 }
+
 .clicked{
-    display: none;
+    /* display: none; */
 }
 .submenu-item{
     /* background-color: gray; */
@@ -28,24 +29,25 @@
 }
 .submenu-item:hover {
   background-color: rgb(68, 68, 68);
+  border-radius: 15px;
  
     
 }
 
 .CompanySubMenu{
-    background-color: gray;
-    width: 10rem;
-    display: block;
+    /* background-color: gray; */
+    /* width: 10rem; */
+    /* display: block; */
     /* list-style: none; */
-    text-align: center;
+    /* text-align: center; */
     /* justify-content: space-between; */
     /* align-items: center; */
-    line-height: 3rem;
-    position: absolute;
-    top: 75px;
+    /* line-height: 3rem; */
+    /* position: absolute; */
+    /* top: 75px; */
     /* text-decoration: none; */
     /* margin: auto; */
-    padding: 0;
+    /* padding: 0; */
     
 
 }
