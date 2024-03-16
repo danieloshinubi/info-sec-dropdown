@@ -1,18 +1,26 @@
 .FeaturesSubmenu {
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
+  /* background-color: grey; */
   width: 10rem;
+  /* height: 50px; */
   display: block;
-  /* list-style: none; */
+  list-style: none;
   text-align: center;
-  /* justify-content: space-between; */
+  /* justify-content: center; */
   /* align-items: center; */
-  /* line-height: 0rem; */
+  line-height: 0rem;
   position: absolute;
-  top: 75px;
+  top: 40px;
+  z-index: 100;
+  right: 0px;
+  /* top: 55px; */
+
   /* text-decoration: none; */
   /* margin: auto; */
   padding: 0;
   border-radius: 15px;
+  /* border: 1px solid  grey; */
+  /* box-shadow: ; */
 }
 
 .clicked {

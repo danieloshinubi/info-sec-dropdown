@@ -12,7 +12,10 @@ const CompanyDropDownMenu = () => {
   const [dropdown, setDropDown] = useState(false);
   return (
     <div className="CompanyDropDownMenu">
-      <ul className={dropdown ? "CompanySubMenu clicked":"CompanySubMenu"} onClick={()=> setDropDown(!dropdown)}>
+      <ul
+        className={dropdown ? "CompanySubMenu clicked" : "CompanySubMenu"}
+        onClick={() => setDropDown(!dropdown)}
+      >
         {CompanySubmenu.map((item) => {
           return (
             <li key={item.path} className={item.className}>

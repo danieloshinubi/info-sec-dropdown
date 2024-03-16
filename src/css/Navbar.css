@@ -15,7 +15,7 @@
   position: relative;
   align-items: center;
 }
-.snap ul {
+.snap-ul {
   width: 450px;
   list-style: none;
   display: flex;
@@ -25,7 +25,7 @@
   text-decoration: none;
 }
 
-.login ul {
+.login-ul {
   width: 250px;
   list-style: none;
   display: flex;
@@ -35,10 +35,10 @@
 /* this nav menu is important for the dropdown when fixing it sometime later, remember the time the nigga did that stuff on yt? */
 .nav-menu {
   height: 50px;
-  width: 170px;
+  width: 110px;
   border-radius: 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .nav-menu:hover {
@@ -47,6 +47,7 @@
 
 .snap {
   display: flex;
+  justify-content: space-between;
 }
 .hover-stuff {
   color: hsl(0, 0%, 41%);
@@ -79,7 +80,7 @@
     align-items: center;
   }
   /* this is important for the hamburger, kindly note, same as the snap class too */
-  .snap ul.login ul {
+  .snap-ul.login ul {
     display: none;
   }
   .snap {
@@ -87,7 +88,7 @@
     flex-direction: column;
   }
 
-  .snap ul.is-open {
+  .snap-ul.is-open {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -95,7 +96,7 @@
     align-items: center;
     padding: 0;
   }
-  .login ul.is-open {
+  .login-ul.is-open {
     display: flex;
     flex-direction: column;
     width: 100%;

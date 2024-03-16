@@ -13,6 +13,7 @@
   justify-content: space-evenly;
   align-items: center;
   font-family: Epilogue;
+  /* margin-top: 5%; */
 }
 .make-remote-work {
   width: 30%;
@@ -95,6 +96,7 @@
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 0;
   }
   .make-remote-work {
     width: 100%;
@@ -115,7 +117,6 @@
   .remote-work-icons svg {
     width: 25%;
   }
-
 }
 @media only screen and (max-width: 768px) {
   .Landing {
@@ -141,7 +142,6 @@
     width: 25%;
     height: 50px;
   }
-
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .Landing {

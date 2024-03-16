@@ -61,25 +61,37 @@ const DropDownMenu = () => {
       className: "submenu-item",
     },
   ];
-//   const CompanySubmenu = [
-//     { path: "/History", text: "History",className: "submenu-item", },
-//     { path: "/OurTeam", text: "Our Team",className: "submenu-item", },
-//     { path: "/Blog", text: "Blog",className: "submenu-item", },
-//   ];
+  //   const CompanySubmenu = [
+  //     { path: "/History", text: "History",className: "submenu-item", },
+  //     { path: "/OurTeam", text: "Our Team",className: "submenu-item", },
+  //     { path: "/Blog", text: "Blog",className: "submenu-item", },
+  //   ];
 
-
-
-  const[dropdown, setDropDown]=useState(false);
+  const [dropdown, setDropDown] = useState(false);
 
   return (
     <div className="DropDownMenu">
-        
-      <ul className={ dropdown ? "FeaturesSubmenu clicked":"FeaturesSubmenu"} onClick={()=> setDropDown(!dropdown)}>
+      <ul
+        className={dropdown ? "FeaturesSubmenu clicked" : "FeaturesSubmenu"}
+        onClick={() => setDropDown(!dropdown)}
+      >
         {FeaturesSubmenu.map((item) => {
           return (
-            <li key={item.path} className={item.className} >
+            <li key={item.path} className={item.className}>
               {/* <Link to={item.path} >{item.icon}</Link> */}
-              <Link to={item.path} onClick={()=> setDropDown(false)} style={{textDecoration:'none', color:"black", padding:'16px', display:'flex', justifyContent:"space-around"}}><span>{item.icon}</span> <span>{item.text}</span></Link>
+              <Link
+                to={item.path}
+                onClick={() => setDropDown(false)}
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  padding: "16px",
+                  display: "flex",
+                  justifyContent: "space-around",
+                }}
+              >
+                <span>{item.icon}</span> <span>{item.text}</span>
+              </Link>
             </li>
           );
         })}
